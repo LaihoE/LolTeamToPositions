@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup, SoupStrainer
 import urllib.request
 from sqlalchemy import create_engine
 import numpy as np
-sqlEngine = create_engine('mysql+pymysql://root:oiu123oiu@localhost/lolcomps')
+sqlEngine = create_engine('')
 dbConnection = sqlEngine.connect()
 
 df=pd.read_sql('games',dbConnection)
